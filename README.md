@@ -1,2 +1,1 @@
-# issues
-Report Snake Championship issues here :)
+If you're experiencing a problem with Snake Championship, please report it here. Thank you! :)
