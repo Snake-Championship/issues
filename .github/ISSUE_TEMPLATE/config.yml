@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Have a question?
+    url: https://snakece.the0show.com/discord
+    about: Please ask and answer questions on our Discord!
+  - name: Reporting a security vulerability?
+    url: mailto:hello@the0show.com
+    about: Please report security vulnerabilities to our email.
