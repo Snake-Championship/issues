@@ -1,0 +1,21 @@
+name: Mark stale issues
+
+on:
+  schedule:
+  - cron: '*/60 * * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v5
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'Hi there! To help keep the issue tracker clean, we automatically close issues that haven''t seen activity in 90 days. If you''d like to keep this issue open, please comment on it, or it will be closed in 7 days. Thank you! :)'
+        stale-issue-label: 'stale'
+        exempt-issue-labels: 'do-not-stale' 
